@@ -1,0 +1,402 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Latest compiled and minified CSS & JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <style>
+        body {
+            margin: 0 10%;
+        }
+
+        .block {
+            position: relative;
+            
+            bottom: 10px;
+
+
+
+        }
+
+        .bae {
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1 class="flow-text">FRIEND FINDER</h1>
+    <hr>
+    <br>
+    <h3 class="flow-text">"Complete the questions below and hit submit to paired with someone who feels similarly!"</h3>
+    <br>
+    <br>
+
+
+    <form>
+        <div class="flow-text">First Name</div>
+
+        <br>
+        <input class="name" input type="text">
+        <br>
+        <div class="flow-text"> Photo URL</div>
+        <br>
+        <input class="photo" input type="text">
+        <br>
+
+        <br>
+        <br>
+        <strong class="flow-text">Question 1</strong>
+        <br>
+        <h4 class="flow-text">"You found this assignment challenging."</h4>
+        <br>
+        <div class="a form-group">
+            <label>Browser Select</label>
+            <select class="browser-default a" id="a">
+                <option value="" disabled selected>Choose your option</option>
+                <option class="a" value=1>1</option>
+                <option class="a" value=2>2</option>
+                <option class="a" value=3>3</option>
+                <option class="a" value=4>4</option>
+                <option class="a" value=5>5</option>
+                <option class="a" value=6>6</option>
+                <option class="a" value=7>7</option>
+                <option class="a" value=8>8</option>
+                <option class="a" value=9>9</option>
+                <option class="a" value=10>10</option>
+            </select>
+
+        </div>
+        <br>
+        <strong class="flow-text">Question 2</strong>
+        <br>
+        <h4 class="flow-text">"You think that the course spent way too much time going over easy database and node commandline concepts, and then
+            pretty much fed you to the sharks with express."</h4>
+        <br>
+        <div class="a form-group">
+            <label>Browser Select</label>
+            <select class="browser-default a" id="b">
+                <option value="" disabled selected>Choose your option</option>
+                <option class="b" value=1>1</option>
+                <option class="b" value=2>2</option>
+                <option class="b" value=3>3</option>
+                <option class="b" value=4>4</option>
+                <option class="b" value=5>5</option>
+                <option class="b" value=6>6</option>
+                <option class="b" value=7>7</option>
+                <option class="b" value=8>8</option>
+                <option class="b" value=9>9</option>
+                <option class="b" value=10>10</option>
+            </select>
+
+        </div>
+        <br>
+        <strong class="flow-text">Question 3</strong>
+        <br>
+        <h4 class="flow-text">"You feel like the no one in the class would be able to correctly design this app, or several of the previous apps,
+            without careful recreation of presolved activities"</h4>
+        <br>
+        <div class="a form-group">
+            <label>Browser Select</label>
+            <select class="browser-default a" id="c">
+                <option value="" disabled selected>Choose your option</option>
+                <option class="c" value=1>1</option>
+                <option class="c" value=2>2</option>
+                <option class="c" value=3>3</option>
+                <option class="c" value=4>4</option>
+                <option class="c" value=5>5</option>
+                <option class="c" value=6>6</option>
+                <option class="c" value=7>7</option>
+                <option class="c" value=8>8</option>
+                <option class="c" value=9>9</option>
+                <option class="c" value=10>10</option>
+            </select>
+
+        </div>
+        <br>
+        <strong class="flow-text">Question 4</strong>
+        <br>
+        <h4 class="flow-text">"You feel like a lot of people in the class are doing the above to make it through many of the assigments"</h4>
+        <br>
+        <div class="a form-group">
+            <label>Browser Select</label>
+            <select class="browser-default a" id="d">
+                <option value="" disabled selected>Choose your option</option>
+                <option class="d" value=1>1</option>
+                <option class="d" value=2>2</option>
+                <option class="d" value=3>3</option>
+                <option class="d" value=4>4</option>
+                <option class="d" value=5>5</option>
+                <option class="d" value=6>6</option>
+                <option class="d" value=7>7</option>
+                <option class="d" value=8>8</option>
+                <option class="d" value=9>9</option>
+                <option class="d" value=10>10</option>
+            </select>
+
+        </div>
+        <br>
+        <strong class="flow-text">Question 5</strong>
+        <br>
+        <h4 class="flow-text">"You feel like Project 1 is an over-exaggeration of many people in the class's abilities, given the amount of in
+            class support there was."</h4>
+        <br>
+        <div class="a form-group">
+            <label>Browser Select</label>
+            <select class="browser-default a" id="e">
+                <option value="" disabled selected>Choose your option</option>
+                <option class="e" value=1>1</option>
+                <option class="e" value=2>2</option>
+                <option class="e" value=3>3</option>
+                <option class="e" value=4>4</option>
+                <option class="e" value=5>5</option>
+                <option class="e" value=6>6</option>
+                <option class="e" value=7>7</option>
+                <option class="e" value=8>8</option>
+                <option class="e" value=9>9</option>
+                <option class="e" value=10>10</option>
+            </select>
+
+        </div>
+        <br>
+        <strong class="flow-text"> Question 6 </strong>
+        <h4 class="flow-text">"You do not recieve the same level of support as you did at the beginning of the class."</h4>
+        <br>
+        <div class="a form-group">
+            <label>Browser Select</label>
+            <select class="browser-default a" id="f">
+                <option value="" disabled selected>Choose your option</option>
+                <option class="f" value=1>1</option>
+                <option class="f" value=2>2</option>
+                <option class="f" value=3>3</option>
+                <option class="f" value=4>4</option>
+                <option class="f" value=5>5</option>
+                <option class="f" value=6>6</option>
+                <option class="f" value=7>7</option>
+                <option class="f" value=8>8</option>
+                <option class="f" value=9>9</option>
+                <option class="f" value=10>10</option>
+            </select>
+
+        </div>
+        <br>
+        <strong class="flow-text">Question 7</strong>
+        <h4 class="flow-text">"You don't understand how the 3 month course could have a thorough understanding at this pace."</h4>
+        <br>
+        <div class="a form-group">
+            <label>Browser Select</label>
+            <select class="browser-default a" id="g">
+                <option value="" disabled selected>Choose your option</option>
+                <option class="g" value=1>1</option>
+                <option class="g" value=2>2</option>
+                <option class="g" value=3>3</option>
+                <option class="g" value=4>4</option>
+                <option class="g" value=5>5</option>
+                <option class="g" value=6>6</option>
+                <option class="g" value=7>7</option>
+                <option class="g" value=8>8</option>
+                <option class="g" value=9>9</option>
+                <option class="g" value=10>10</option>
+            </select>
+
+        </div>
+        <br>
+        <strong class="flow-text">Question 8</strong>
+        <h4 class="flow-text">"You feel like the career goals should be more visible."</h4>
+        <br>
+        <div class="a form-group">
+            <label>Browser Select</label>
+            <select class="browser-default a" id="h">
+                <option value="" disabled selected>Choose your option</option>
+                <option class="h" value=1>1</option>
+                <option class="h" value=2>2</option>
+                <option class="h" value=3>3</option>
+                <option class="h" value=4>4</option>
+                <option class="h" value=5>5</option>
+                <option class="h" value=6>6</option>
+                <option class="h" value=7>7</option>
+                <option class="h" value=8>8</option>
+                <option class="h" value=9>9</option>
+                <option class="h" value=10>10</option>
+            </select>
+
+        </div>
+        <br>
+        <strong class="flow-text">Question 9</strong>
+        <h4 class="flow-text">"You feel like the gap between people who understand this material and people who don't is gonna get a lot wider
+            soon."
+        </h4>
+        <br>
+        <div class="a form-group">
+            <label>Browser Select</label>
+            <select class="browser-default a" id="i">
+                <option value="" disabled selected>Choose your option</option>
+                <option class="i" value=1>1</option>
+                <option class="i" value=2>2</option>
+                <option class="i" value=3>3</option>
+                <option class="i" value=4>4</option>
+                <option class="i" value=5>5</option>
+                <option class="i" value=6>6</option>
+                <option class="i" value=7>7</option>
+                <option class="i" value=8>8</option>
+                <option class="i" value=9>9</option>
+                <option class="i" value=10>10</option>
+            </select>
+
+        </div>
+        <br>
+        <strong class="flow-text">Question 10</strong>
+        <br>
+        <h4 class="flow-text">"Despite these criticisms, you couldn't have gotten as far as you have without this course."</h4>
+        <br>
+        <div class="a form-group">
+            <label>Browser Select</label>
+            <select class="browser-default a" id="j">
+                <option value="" disabled selected>Choose your option</option>
+                <option class="j" value=1>1</option>
+                <option class="j" value=2>2</option>
+                <option class="j" value=3>3</option>
+                <option class="j" value=4>4</option>
+                <option class="j" value=5>5</option>
+                <option class="j" value=6>6</option>
+                <option class="j" value=7>7</option>
+                <option class="j" value=8>8</option>
+                <option class="j" value=9>9</option>
+                <option class="j" value=10>10</option>
+            </select>
+
+        </div>
+        <br>
+
+        <div class = "block">
+            <button type="submit" value="submit" class="waves-effect waves-light btn modal-trigger click" href="#modal1">
+                Submit
+            </button>
+        </div>
+
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4 class="bae">THIS IS BAE!</h4>
+                <p class="baename bae">A bunch of text</p>
+                <img class="baeurl responsive-img" src="">
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+    <script>
+
+        $('.click').on('click', function () {
+            //this will send stuff to the survey POST as an object
+
+            event.preventDefault();
+
+            console.log('working');
+
+            $('.modal').modal();
+
+
+
+
+            var friend = {
+                name: $('.name').val(),
+                photo: $('.photo').val(),
+                scores: [
+                    $('#a').val(),
+                    $('#b').val(),
+                    $('#c').val(),
+                    $('#d').val(),
+                    $('#e').val(),
+                    $('#f').val(),
+                    $('#g').val(),
+                    $('#h').val(),
+                    $('#i').val(),
+                    $('#j').val(),
+                ]
+            };
+            console.log(friend);
+
+
+
+
+
+            $.post('api/friends', friend, function (data) {
+                if (data) {
+                    console.log("Friend pushed to backend.")
+                    // $("#results-modal").modal("toggle");
+
+                    $('.baename').html(data.name);
+                    $('.baeurl').html(data.photo);
+                    $(".baeurl").attr("src", data.photo);
+
+
+
+
+                }
+                else {
+                    console.log("Did not push.")
+                }
+            });
+
+
+            //write form clears at the end later
+        })
+
+        $('.modal-close').on('click', function () {
+            $('.modal').modal('close');
+
+        })
+
+    </script>
+
+
+
+    <script type="text/javascript">
+
+        // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+        // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+        // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+        // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+
+    </script>
+</body>
+
+</html>
