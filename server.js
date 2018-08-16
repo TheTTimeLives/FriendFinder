@@ -13,7 +13,7 @@ require('./app/routing/apiRoutes')(app); //why .app?
 
 
 
-var PORT = 500;
+var PORT = process.env.PORT || 500;
 
 app.listen(PORT, function() {
     console.log("App listening on localhost:" + PORT);
